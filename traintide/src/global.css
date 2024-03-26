@@ -18,7 +18,9 @@
     --color-accent: #9C27B0;
     --color-accent-dark: #7B1FA2;
     --color-accent-light: #E1BEE7;
-    --color-background: #333;
+    --color-background: #f8f9fa;
+    --color-background-2: #e9ecef;
+    --color-background-dark: #333;
     --color-text: #333;
     --color-text-light: #666;
     --color-text-dark: #000;
