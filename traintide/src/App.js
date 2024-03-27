@@ -13,6 +13,9 @@ import Settings from './views/Settings';
 import NotFound from './views/NotFound';
 import About from './views/About';
 import LoginSignup from './views/LoginSignup';
+import Search from './views/Search';
+import Book from './views/Book';
+import Premium from './views/Premium';
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -28,8 +31,11 @@ const App = () => {
               <Route path="/" element={<Home />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/schedule" element={<Schedule />} />
-              <Route path="/settings" element={<Settings />} />
+              <Route path="/settings/*" element={<Settings />} />
               <Route path="/about" element={<About />} />
+              <Route path="/search/*" element={<Search />} />
+              <Route path="book/*" element={<Book />} />
+              <Route path="premium" element={<Premium />} />
               <Route path="auth/*" element={<LoginSignup />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
