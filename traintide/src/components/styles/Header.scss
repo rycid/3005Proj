@@ -21,11 +21,46 @@ header {
 		margin: 0 auto;
 		text-align: center;
 
-		a svg{
+		a svg {
 			height: 1.5rem;
 			fill: var(--color-text);
 			cursor: pointer;
 		}
+		.nav-actions{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			width: fit-content;
+			gap: 1rem;
+			// padding: 0.5rem;
+			// background-color: var(--color-background-2);
+			border-radius: var(--border-radius-medium);
+
+			.action{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 2rem;
+				height: 2rem;
+				background-color: var(--color-background-2);
+				border-radius: 50%;
+				svg, path{
+					height: 1.25rem;
+					fill: var(--color-text);
+					cursor: pointer;
+				}
+
+				&.premium{
+					// background-color: var(--color-primary);
+					svg, path{
+						fill: var(--color-primary);
+					}
+				}
+			}
+		}
+
+
 	}
 
     &.hide {
