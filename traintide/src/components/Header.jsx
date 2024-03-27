@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './styles/Header.scss';
 
+import TrainTideIcon from '../icons/TrainTideLogo';
+
 // import SideBar from './SideBar';
 
 const Header = () => {
@@ -27,7 +29,9 @@ const Header = () => {
         <header className={hideHeader ? 'hide' : ''}>
             <nav>
                 {/* <i className="fa-solid fa-bars"></i> */}
-                <Link to="/">TrainTide</Link> 
+                <Link to="/">
+                    <TrainTideIcon />
+                </Link> 
                 {/* <button onClick={() => setSidebarOpen(!sidebarOpen)}>
                     side
                 </button> */}
