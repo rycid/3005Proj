@@ -1,0 +1,53 @@
+.schedule{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    // height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    .react-calendar{
+        border-radius: var(--border-radius-small);
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        background-color: var(--color-background);
+        // width: 75%;
+        max-width: 500px;
+        margin: 0 auto;
+
+        .react-calendar__tile{
+
+            &--active{
+                background-color: var(--color-primary);
+                color: var(--color-background);
+            }
+            &--now{
+                background-color: var(--color-primary);
+                color: var(--color-background);
+            }
+            &.weekend{ //will be replaced with the "event scheduled" class
+                color: var(--color-primary);
+                position: relative;
+
+                abbr{
+                    &:before{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 75%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 5px;
+                        height: 5px;
+                        background-color: var(--color-primary);
+                        border-radius: 50%;
+
+                    }
+                }
+            }
+            &--neighboringMonth{
+                color: var(--color-text-2);
+            }
+        }
+    }
+}
