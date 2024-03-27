@@ -33,7 +33,11 @@ const SideBar = ({ open, setOpen }) => {
                 </NavLink>
             </div>
             <div className='side-footer'>
-                <p>TrainTide v1.0</p>
+                <p>{open ? (
+                    'TrainTide v1.0'
+                ) : (
+                    'v1.0'
+                )}</p>
             </div>
         </aside>
     );
