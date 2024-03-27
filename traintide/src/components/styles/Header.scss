@@ -7,6 +7,8 @@ header {
 	right: 0;
 	z-index: 1000;
 	padding: 0 1rem;
+    box-sizing: border-box;
+    width: 100%;
 	transition: all 0.3s;
 	nav {
 		display: flex;
