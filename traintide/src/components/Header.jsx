@@ -6,10 +6,25 @@ import './styles/Header.scss';
 
 const Header = () => {
     const [isSticky, setSticky] = useState(false);
+    const [hideHeader, setHideHeader] = useState(false);
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 10) {
+                setHideHeader(true);
+            } else {
+                setHideHeader(false);
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', () => handleScroll);
+        };
+    }, []);
+
     return (
-        <header>
+        <header className={hideHeader ? 'hide' : ''}>
             <nav>
                 {/* <i className="fa-solid fa-bars"></i> */}
                 <Link to="/">TrainTide</Link> 
