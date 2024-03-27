@@ -73,6 +73,8 @@ aside {
 			}
 			.label {
 				display: none;
+				user-select: none;	
+		
 			}
 		}
 		.menu-item.active {
@@ -86,6 +88,7 @@ aside {
 		font-size: 0.8rem;
 		width: 100%;
 		text-align: center;
+		user-select: none;
     }
 }
 
