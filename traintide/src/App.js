@@ -14,7 +14,6 @@ import NotFound from './views/NotFound';
 import About from './views/About';
 
 const App = () => {
-  const [hideHeader, setHideHeader] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
