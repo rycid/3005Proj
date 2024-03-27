@@ -12,6 +12,7 @@ import Schedule from './views/Schedule';
 import Settings from './views/Settings';
 import NotFound from './views/NotFound';
 import About from './views/About';
+import LoginSignup from './views/LoginSignup';
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -29,6 +30,7 @@ const App = () => {
               <Route path="/schedule" element={<Schedule />} />
               <Route path="/settings" element={<Settings />} />
               <Route path="/about" element={<About />} />
+              <Route path="auth/*" element={<LoginSignup />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
