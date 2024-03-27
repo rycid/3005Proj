@@ -9,6 +9,7 @@ header {
 	padding: 0 1rem;
     box-sizing: border-box;
     width: 100%;
+    background-color: var(--color-background);
 	transition: all 0.3s;
 	nav {
 		display: flex;
@@ -20,4 +21,8 @@ header {
 		margin: 0 auto;
 		text-align: center;
 	}
+
+    &.hide {
+        transform: translateY(-100%);
+    }
 }
