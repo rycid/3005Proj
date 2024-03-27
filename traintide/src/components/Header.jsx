@@ -32,6 +32,20 @@ const Header = () => {
                 <Link to="/">
                     <TrainTideIcon />
                 </Link> 
+                <div className="nav-actions">
+                    <NavLink to="/search" className="action">
+                        <i className="fa-solid fa-search"></i>
+                    </NavLink>
+                    <NavLink to="/book" className="action">
+                        <i className="fa-solid fa-calendar-plus"></i>
+                    </NavLink>
+                    <NavLink to="/premium" className="action premium">
+                        <i className="fa-solid fa-crown"></i>
+                    </NavLink>
+                    
+                </div>
+
+
                 {/* <button onClick={() => setSidebarOpen(!sidebarOpen)}>
                     side
                 </button> */}
