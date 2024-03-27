@@ -5,8 +5,9 @@ import './styles/SideBar.scss';
 const SideBar = ({ open, setOpen }) => {
     return (
         <aside className={open ? 'open' : ''}>
-            <div className='menu-toggle' onClick={() => setOpen(!open)}>
-                <i className={open ? 'fa-solid fa-times' : 'fa-solid fa-bars'}></i>
+            <div className={`menu-toggle ${open ? 'open' : ''}`} onClick={() => setOpen(!open)}>
+                <i className={'fa-solid fa-bars openIcon'}></i>
+                <i className={'fa-solid fa-times closeIcon'}></i>
             </div>
             <div className='menu'>
                     <NavLink to='/' className='menu-item'>
